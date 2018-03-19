@@ -1,7 +1,7 @@
 {
-  "name": "bs4starter",
+  "name": "starterpack",
   "version": "1.0.0",
-  "description": "Bootstrap 4 workflow",
+  "description": "workflow",
   "main": "index.js",
   "scripts": {
     "start": "gulp"
@@ -9,13 +9,10 @@
   "author": "Saranda Sadiku",
   "license": "MIT",
   "dependencies": {
-    "bootstrap": "4.0.0-beta.3",
-    "font-awesome": "^4.7.0",
-    "jquery": "^3.2.1",
-    "popper.js": "^1.12.9"
+    "jquery": "^3.3.1"
   },
   "devDependencies": {
-    "browser-sync": "^2.23.5",
+    "browser-sync": "^2.23.6",
     "gulp": "^3.9.1",
     "gulp-sass": "^3.1.0"
   }
