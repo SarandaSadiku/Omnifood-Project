@@ -20,6 +20,15 @@ html {
   font-weight: 300;
   text-rendering: optimizeLegibility;
 }
+.clearfix{zoom:1};
+.clearfix:after{
+  content: "";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+
+}
 .row {
   max-width: 1140px;
   margin: 0 auto;
@@ -226,4 +235,52 @@ header {
      }
    }
  }
+}
+
+/***********************
+   SECTION STEPS
+************************/
+.section-steps{
+  background-color: #f4f4f4;
+  .app-screen{
+    width: 40%;
+  }
+  .steps-box{
+    margin-top: 30px;
+
+    &:first-child{
+      text-align: right;
+      padding-right: 3%;
+    }
+    &:last-child{
+      padding-left: 3%;
+    }
+  }
+  .works-step:last-of-type{
+    margin-bottom: 130px;
+  }
+  .works-step{
+    margin-bottom:50px;
+    div{
+      color: $orange-color;
+      border: 2px solid $orange-color;
+      display: inline-block;
+      border-radius: 50%;
+      height: 46px;
+      width: 50px;
+      text-align: center;
+      padding: 2px;
+      float: left;
+      font-size: 150%;
+      margin-right: 25px;
+    }
+  }
+  .btn-app{
+    img{
+      height: 50px;
+      width: auto;
+      margin-right: 10px;
+
+    }
+  }
 }

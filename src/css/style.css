@@ -12,6 +12,16 @@ html {
   font-weight: 300;
   text-rendering: optimizeLegibility; }
 
+.clearfix {
+  zoom: 1; }
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden; }
+
 .row {
   max-width: 1140px;
   margin: 0 auto; }
@@ -184,3 +194,38 @@ header {
           .section-meals .meals-showcase li .meal-photo img:hover {
             opacity: 1;
             transform: scale(1.03); }
+
+/***********************
+   SECTION STEPS
+************************/
+.section-steps {
+  background-color: #f4f4f4; }
+  .section-steps .app-screen {
+    width: 40%; }
+  .section-steps .steps-box {
+    margin-top: 30px; }
+    .section-steps .steps-box:first-child {
+      text-align: right;
+      padding-right: 3%; }
+    .section-steps .steps-box:last-child {
+      padding-left: 3%; }
+  .section-steps .works-step:last-of-type {
+    margin-bottom: 130px; }
+  .section-steps .works-step {
+    margin-bottom: 50px; }
+    .section-steps .works-step div {
+      color: #e67e22;
+      border: 2px solid #e67e22;
+      display: inline-block;
+      border-radius: 50%;
+      height: 46px;
+      width: 50px;
+      text-align: center;
+      padding: 2px;
+      float: left;
+      font-size: 150%;
+      margin-right: 25px; }
+  .section-steps .btn-app img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px; }
