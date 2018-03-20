@@ -20,6 +20,20 @@ html {
   font-weight: 300;
   text-rendering: optimizeLegibility;
 }
+a:link,
+a:visited{
+  color: $orange-color;
+  text-decoration: none;
+  border-bottom: 1px solid $orange-color;
+  padding-bottom: 1px;
+  transition: border-bottom 0.2s, color 0.2s;
+}
+a:hover,
+a:active{
+  color: $html-color;
+  border-bottom: 1px solid transparent;
+}
+
 .clearfix{zoom:1};
 .clearfix:after{
   content: "";
@@ -69,6 +83,42 @@ h2:after{
 h3{
   font-size: 110%;
   margin-bottom: 15px;
+}
+.box{
+  padding: 1%;
+  /***** ICONS *****/
+  .icon-big{
+    font-size: 350%;
+    display: block;
+    color: $orange-color;
+    margin-bottom: 10px;
+  }
+  p{
+    font-size: 90%;
+    line-height: 145%;
+  }
+  img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  .city-feature{
+    margin-bottom: 5px;
+  }
+  .icon-small{
+    display: inline-block;
+    width: 30px;
+    color: $orange-color;
+    text-align: center;
+    font-size: 120%;
+    line-height: 120%;
+    margin-right: 10px;
+
+    /*Secrets to align text to icons */
+    vertical-align: middle;
+    margin-top: -6px;
+  }
+
 }
 
 /****** PARAGRAPHS ********/
@@ -183,20 +233,6 @@ header {
     margin-left: 15%;
     margin-bottom: 40px;
   }
-  .box{
-    padding: 1%;
-    /***** ICONS *****/
-    .icon-big{
-      font-size: 350%;
-      display: block;
-      color: $orange-color;
-      margin-bottom: 10px;
-    }
-    p{
-      font-size: 90%;
-      line-height: 145%;
-    }
-  }
 }
 
 /***********************
@@ -280,7 +316,10 @@ header {
       height: 50px;
       width: auto;
       margin-right: 10px;
-
+    }
+    &:link,
+    &:visited{
+      border: none;
     }
   }
 }
