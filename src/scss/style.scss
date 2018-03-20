@@ -11,6 +11,9 @@ $orange-color: #e67e22;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  &:focus{
+    outline: 0;
+  }
 }
 html {
   font-family: $font-family;
@@ -123,7 +126,8 @@ h3{
 }
 /*------------BUTTONS----------*/
   .btn:link,
-  .btn:visited {
+  .btn:visited,
+  input[type=submit] {
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -132,11 +136,13 @@ h3{
     transition: background-color 0.2s, border 0.2s, color 0.2s;
   }
   .btn-full:link,
-  .btn-full:visited {
+  .btn-full:visited,
+  input[type=submit] {
     background-color: $orange-color;
     border: 1px solid $orange-color;
     color: $white-color;
     margin-right: 15px;
+    cursor: pointer;
   }
   .btn-ghost:link,
   .btn-ghost:visited {
@@ -144,7 +150,8 @@ h3{
     color: $orange-color;
   }
   .btn:hover,
-  .btn:active {
+  .btn:active,
+  input[type=submit] {
     background-color: darken($orange-color, 10%);
   }
   .btn-full:hover,
@@ -417,6 +424,32 @@ header {
       .plan-price-meal{
         font-size: 80%;
       }
-
     }
   }
+
+  /***********************
+     SECTION FORM
+  ************************/
+.section-form{
+  .contact-form{
+    width: 60%;
+    margin: 0 auto;
+
+    input[type=text],
+    input[type=email],
+    select,
+    textarea{
+      width: 100%;
+      padding: 7px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+    }
+    textarea{
+       height: 100px;
+    }
+    input[type=checkbox]{
+      margin: 10px 5px 10px 0;
+    }
+
+  }
+}
