@@ -362,3 +362,57 @@ header {
     height: 100px; }
   .section-form .contact-form input[type=checkbox] {
     margin: 10px 5px 10px 0; }
+
+/***********************
+   FOOTER
+************************/
+footer {
+  background-color: #333;
+  padding: 40px;
+  font-size: 80%; }
+  footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 20px; }
+  footer .footer-nav {
+    list-style: none;
+    float: left; }
+  footer .social-links {
+    list-style: none;
+    float: right; }
+    footer .social-links li a:link,
+    footer .social-links li a:visited {
+      font-size: 160%; }
+    footer .social-links .ion-social-facebook,
+    footer .social-links .ion-social-twitter,
+    footer .social-links .ion-social-googleplus,
+    footer .social-links .ion-social-instagram {
+      transition: color 0.2s; }
+    footer .social-links .ion-social-facebook:hover {
+      color: #3b5998; }
+    footer .social-links .ion-social-twitter:hover {
+      color: #55acee; }
+    footer .social-links .ion-social-googleplus:hover {
+      color: #dd4b39; }
+    footer .social-links .ion-social-instagram:hover {
+      color: #4c68d7; }
+  footer .footer-nav li,
+  footer .social-links li {
+    display: inline-block;
+    margin-right: 20px; }
+    footer .footer-nav li a:link,
+    footer .footer-nav li a:visited,
+    footer .social-links li a:link,
+    footer .social-links li a:visited {
+      text-decoration: none;
+      border: 0;
+      color: #888;
+      transition: color 0.2s; }
+    footer .footer-nav li a:hover,
+    footer .footer-nav li a:active,
+    footer .social-links li a:hover,
+    footer .social-links li a:active {
+      color: #ddd; }
+  footer .footer-nav li:last-child,
+  footer .social-links li:last-child {
+    margin-right: 0; }
