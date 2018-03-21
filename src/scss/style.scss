@@ -1,5 +1,5 @@
 $font-family: 'Lato', sans-serif;
-$html-bg-color: #fff;
+$white-bg: #fff;
 $white-color: #fff;
 $html-color: #555;
 $html-font-size: 20px;
@@ -14,7 +14,7 @@ $orange-color: #e67e22;
 }
 html {
   font-family: $font-family;
-  background-color: $html-bg-color;
+  background-color: $white-bg;
   color: $html-color;
   font-size: $html-font-size;
   font-weight: 300;
@@ -105,45 +105,22 @@ h3{
   .city-feature{
     margin-bottom: 5px;
   }
-  .icon-small{
-    display: inline-block;
-    width: 30px;
-    color: $orange-color;
-    text-align: center;
-    font-size: 120%;
-    line-height: 120%;
-    margin-right: 10px;
-
-    /*Secrets to align text to icons */
-    vertical-align: middle;
-    margin-top: -6px;
-  }
 
 }
 
-/****** PARAGRAPHS ********/
+.icon-small{
+  display: inline-block;
+  width: 30px;
+  color: $orange-color;
+  text-align: center;
+  font-size: 120%;
+  line-height: 120%;
+  margin-right: 10px;
 
-
-
-/***********************
-  HEADER
-************************/
-
-header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/hero.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  height: 100vh;
-/*------------HEADINGS----------*/
-
-  .hero-text-box {
-    position: absolute;
-    width: 1140px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
+  /*Secrets to align text to icons */
+  vertical-align: middle;
+  margin-top: -6px;
+}
 /*------------BUTTONS----------*/
   .btn:link,
   .btn:visited {
@@ -179,6 +156,28 @@ header {
     border: 1px solid $orange-color;
     color: $white-color;
   }
+
+
+
+/***********************
+  HEADER
+************************/
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/hero.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+/*------------HEADINGS----------*/
+
+  .hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   .logo {
     height: 100px;
     width: auto;
@@ -364,3 +363,60 @@ header {
     }
   }
 }
+
+/***********************
+   SECTION PLANS
+************************/
+.section-plans{
+  background-color: #f4f4f4;
+
+  .plan-box{
+      background-color: $white-bg;
+      border-radius: 5px;
+      width: 90%;
+      margin-left: 5%;
+      box-shadow: 0 2px 2px #efefef;
+
+      ul{
+        list-style: none;
+
+        li{
+          padding: 5px 0;
+        }
+      }
+
+      div{
+        padding: 15px;
+        border: 1px solid #e8e8e8;
+
+        &:first-child{
+          background-color: #fcfcfc;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+        }
+        &:last-child{
+          // background-color: #fcfcfc;
+          text-align: center;
+          border: 0;
+          border-top: 1px solid #e8e8e8; 
+        }
+      }
+
+      .plan-price{
+        font-size: 300%;
+        margin-bottom: 10px;
+        font-weight: 100;
+        color: $orange-color;
+
+        span{
+          font-size: 30%;
+          font-weight: 300;
+        }
+      }
+
+      .plan-price-meal{
+        font-size: 80%;
+      }
+
+    }
+  }
