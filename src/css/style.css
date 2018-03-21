@@ -323,6 +323,7 @@ header {
         border-top-left-radius: 5px;
         border-top-right-radius: 5px; }
       .section-plans .plan-box div:last-child {
+        background-color: #fcfcfc;
         text-align: center;
         border: 0;
         border-top: 1px solid #e8e8e8; }
